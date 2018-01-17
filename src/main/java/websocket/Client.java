@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
 
 import org.eclipse.jetty.websocket.api.Session;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketClose;
 import org.eclipse.jetty.websocket.api.annotations.OnWebSocketConnect;
 import org.eclipse.jetty.websocket.api.annotations.OnWebSocketMessage;
 import org.eclipse.jetty.websocket.api.annotations.WebSocket;
@@ -38,5 +39,6 @@ private Session session;
 	public CountDownLatch getLatch() {
 		return latch;
 	}
+
 
 }
